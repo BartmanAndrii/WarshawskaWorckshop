@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+:root {
+    --main-color: #201d1d;
+    font-family: 'Poiret One', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+    background-color: grey;
+}
+
+h1, h2, p, section, header, main,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+header nav .logo,
+header section h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header nav .menu {
+    display: flex;
+    flex: 1;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+header nav .menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #201d1d;
+    border: 1px transparent;
+    padding: 20px;
+}
+
+header nav .menu a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 800px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+ header .logoaboutus img {
+     width: 100%;
+     display: block;
+    }
+ main .logosgroup img {
+    width: 100%;
+    
+@media (min-width: 660px) {
+    .logosgroup {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+}
