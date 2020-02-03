@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
-
-:root {
-    --main-color: #201d1d;
-    font-family: 'Poiret One', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap'); :root {
+    --main-color: #201d1d; font-family: 'Poiret One', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -12,14 +9,12 @@ body {
     background-color: grey;
 }
 
-h1, h2, p, section, header, main,
-footer {
+h1, h2, p, section, header, main, footer {
     margin: 0;
     padding: 0;
 }
 
-header nav .logo,
-header section h1 {
+header nav .logo, header section h1 {
     font-family: 'Poiret One', cursive;
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -51,16 +46,48 @@ header nav .menu a:hover {
         display: flex;
         align-items: center;
     }
- header .logoaboutus img {
-     width: 100%;
-     display: block;
+
+    header .logoaboutus img {
+        width: 100%;
+        display: block;
     }
- main .logosgroup img {
-    width: 100%;
-    
-@media (min-width: 660px) {
-    .logosgroup {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-}
+
+    main .logosgroup img {
+        width: 100%;
+    }
+
+    @media (min-width: 660px) {
+        .logosgroup {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+        }
+
+        main .servicessample img {
+            width: 50%;
+        }
+
+        @media (min-width: 660px) {
+            .servicessample {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 5px;
+            }
+
+            @media (min-width: 660px) {
+                main .price {
+                    display: flex;
+                    justify-content: center;
+                    grid-gap: 5px;
+                }
+
+                footer .contacticons img {
+                    width: 30%;
+                }
+
+                @media (min-width: 660px) {
+                    footer .contacticons {
+                        display: flex;
+                        flex-direction: row;
+                        grid-gap: 5px;
+                    }
